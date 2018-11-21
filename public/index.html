@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/css/main.css"> -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <style>
+      /* Desktop */
+      @media only screen and (min-width: 960px) {
+        /* containers */
+        .email-wrapper {
+            width: 600px;
+        }
+      }
+      /* Mid Size Devices */
+      @media only screen and (max-width: 960px) {
+        /* containers */
+        .email-wrapper {
+          width: 600px;
+        }
+        /* banner images */
+        .most-advanced__image,
+        .one-app__image {
+          width: 100%;
+        }
+      }
+      /* Mobile */
+      @media only screen and (max-width: 600px) {
+        /* .row-1 */
+        .email-wrapper,
+        .header-left,
+        .header-right {
+          width: 100%;
+        }
+        /* hero .row-2 */
+        .hero-lets__column-one,
+        .hero-lets__column-two {
+          width: 50%;
+        }
+
+        .hero-lets__column-three {
+          width: 100%;
+          text-align: center;
+        }
+          .section-title--connect {
+            width: 60%;
+          }
+          .icon-connect {
+            width: 40%;
+            text-align: right;
+          }
+        /* All features .row-5 */
+        .all-features__column-one,
+        .all-features__column-two,
+        .all-features__column-three {
+          width: 100%;
+        }
+        .all-features__column-one,
+        .all-features__column-two {
+          margin-bottom: 20px;
+        }
+
+      }
+      /* Extra Small */
+      @media only screen and (max-width: 400px) {
+        /* hero .row-2 */
+        .hero-lets__column-one,
+        .hero-lets__column-two,
+        .hero-lets__column-three {
+          width: 100%;
+          text-align: center;
+        }
+          .section-title--notify,
+          .section-title--share {
+            width: 50%;
+          }
+          .section-title--connect {
+            width: 60%;
+          }
+          .icon-notify,
+          .icon-share {
+            width: 40%;
+            text-align: right;
+          }
+          .icon-connect {
+            width: 40%;
+            text-align: right;
+          }
+        /* .row-6 */
+        [class^="details-column"] > table {
+          padding: 0 !important;
+        }
+        .details-column--one,
+        .details-column--two {
+          width: 100% !important;
+          float: left;
+        }
+      }
+
+    </style>
   </head>
   <body>
     <!-- Start of HTML Email -->
@@ -14,13 +107,13 @@
       <tr>
         <td>
           <!-- Start of Page Wrapper -->
-          <table class="container" width="600px" border="0" align="center" cellspacing="0" cellpadding="0">
+          <table class="email-wrapper" border="0" align="center" cellspacing="0" cellpadding="0">
             <!-- Start of header row -->
             <tr class="row-1">
               <!-- Start Parent Container of .left-column, .right-column -->
               <td>
-                <!-- Start of .left-column -->
-                <table class="left-column" width="50%" border="0" align="left" cellspacing="0" cellpadding="0" style="background: rgb(79,226,242);  background: -moz-linear-gradient(-45deg, rgba(79,226,242,1) 0%, rgba(42,128,214,1) 100%); background: -webkit-linear-gradient(-45deg, rgba(79,226,242,1) 0%,rgba(42,128,214,1) 100%); background: linear-gradient(135deg, rgba(79,226,242,1) 0%,rgba(42,128,214,1) 100%); font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 15px 70px 15px; height: 100%;">
+                <!-- Start of .header-left -->
+                <table class="header-left" width="50%" border="0" align="left" cellspacing="0" cellpadding="0" style="background: rgb(79,226,242);  background: -moz-linear-gradient(-45deg, rgba(79,226,242,1) 0%, rgba(42,128,214,1) 100%); background: -webkit-linear-gradient(-45deg, rgba(79,226,242,1) 0%,rgba(42,128,214,1) 100%); background: linear-gradient(135deg, rgba(79,226,242,1) 0%,rgba(42,128,214,1) 100%); font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 15px 70px 15px; height: 100%;">
                   <tr>
                     <td style="color:white;">
                       <img src="/img/logo.png" alt="App Logo" />
@@ -32,8 +125,8 @@
                   </tr>
                 </table>
                 <!-- End of .left-column -->
-                <!-- Start of .right-column -->
-                <table class="right-column" width="50%" border="0" align="right" cellspacing="0" cellpadding="0" style="height: 100%;">
+                <!-- Start of .header-right -->
+                <table class="header-right" width="50%" border="0" align="right" cellspacing="0" cellpadding="0" style="height: 100%;">
                   <tr>
                     <td>
                       <!-- Start of site navigation -->
@@ -67,23 +160,23 @@
             </tr>
             <!-- End of header row -->
             <!-- Start of Hero "Let's you.." row -->
-            <tr class="row-2" style="background-color: #fafafa;">
-              <td align="center">
+            <tr class="row-2">
+              <td class="hero-lets__title" align="center" style="background-color: #fafafa;">
                 <h3 class="section-title--h3" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; vertical-align: middle; color: #333; font-size: 24px; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; padding: 36px 0 20px 0;">Hero Let's you...</h3>
               </td>
               <tr style="height: 10px;">
-                <td>
-                  <!-- Start of .column-left 'Notify Icon' -->
-                  <table class="column-left" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="height: 200px; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 10px; background-color: #fafafa;">
+                <td class="hero-lets__columns">
+                  <!-- Start of Hero Lets Column One -->
+                  <table class="hero-lets__column-one" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="height: 200px; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 10px; background-color: #fafafa;">
                     <tr>
                       <!-- Notify Icon -->
-                      <td width="25%" align="left" style="vertical-align: middle;">
-                        <img class="icon icon-notify" src="/img/bell_icon.png" alt="Notification Icon">
+                      <td class="icon-notify" width="25%" align="left" style="vertical-align: middle;">
+                        <img class="icon" src="/img/bell_icon.png" alt="Notification Icon">
                       </td>
                       <!-- Section Title -->
-                      <td align="left" width="75%" style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding-left: 6px;">Notify</td>
+                      <td class="section-title--notify" align="left" width="75%" style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding-left: 6px;">Notify</td>
                     </tr>
-                    <!-- Section Link 'learn more' -->
+                    <!-- column one text -->
                     <tr>
                       <td colspan="2">
                         <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Stay up to date on the latest news.</p>
@@ -95,18 +188,18 @@
                       </td>
                     </tr>
                   </table>
-                  <!-- End of .column-left -->
-                  <!-- Start of .column-center -->
-                  <table class="column-center" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="height: 200px; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 10px; background-color: #fafafa;">
+                  <!-- End of Hero Lets Column One -->
+                  <!-- Start of Hero Lets Column Two -->
+                  <table class="hero-lets__column-two" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="height: 200px; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 10px; background-color: #fafafa;">
                     <tr>
                       <!-- Share Icon -->
-                      <td width="25%" align="left" style="vertical-align: middle;">
-                        <img class="icon icon-notify" src="/img/share_icon.png" alt="Notification Icon">
+                      <td class="icon-share" width="25%" align="left" style="vertical-align: middle;">
+                        <img class="icon" src="/img/share_icon.png" alt="share Icon">
                       </td>
                       <!-- Section Title -->
-                      <td align="left" width="75%" style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding-left: 6px;">Share</td>
+                      <td class="section-title--share" align="left" width="75%" style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding-left: 6px;">Share</td>
                     </tr>
-                    <!-- Section Link 'learn more' -->
+                    <!-- Section Text -->
                     <tr>
                       <td colspan="2">
                         <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Share the latest industry information.</p>
@@ -118,16 +211,16 @@
                       </td>
                     </tr>
                   </table>
-                  <!-- End of .column-center -->
-                  <!-- Start of .column-right -->
-                  <table class="column-center" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="height: 200px; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 10px; background-color: #fafafa;">
+                  <!-- End of Hero Lets Column Two -->
+                  <!-- Start of Hero Lets Column Three -->
+                  <table class="hero-lets__column-three" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="height: 200px; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 10px; background-color: #fafafa;">
                     <tr>
                       <!-- Connect Icon -->
-                      <td width="25%" align="left" style="vertical-align: middle;">
-                        <img class="icon icon-notify" src="/img/wifi_icon.png" alt="Notification Icon">
+                      <td class="icon-connect" width="25%" align="left" style="vertical-align: middle;">
+                        <img class="icon" src="/img/wifi_icon.png" alt="Connection Icon">
                       </td>
                       <!-- Section Title -->
-                      <td align="left" width="75%" style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding-left: 6px;">Connect</td>
+                      <td class="section-title--connect" align="left" width="75%" style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding-left: 6px;">Connect</td>
                     </tr>
                     <!-- Section Link 'learn more' -->
                     <tr>
@@ -141,7 +234,7 @@
                       </td>
                     </tr>
                   </table>
-                  <!-- End of .column-right -->
+                  <!-- End of Hero Lets Column Three -->
                 </td>
               </tr>
             </tr>
@@ -153,7 +246,7 @@
                   <!-- banner image -->
                   <tr>
                     <td align="center" style="padding: 60px 0 40px 0;">
-                      <img src="/img/image_head.jpg" alt="">
+                      <img class="most-advanced__image" src="/img/image_head.jpg" alt="">
                     </td>
                   </tr>
                   <!-- 'World's most advanced...' paragraph -->
@@ -170,13 +263,13 @@
                         <!-- Start of paragraphs row -->
                         <tr>
                           <!-- paragraph one -->
-                          <td width="50%" style="padding: 0 10px 20px;">
+                          <td class="most-advanced__paragraph--1" width="50%" style="padding: 0 10px 20px;">
                             <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">
                               The Strong museum has collected more than 55,000 video games and related artifacts from the history of gaming.
                             </p>
                           </td>
                           <!-- paragraph two -->
-                          <td width="50%" style="padding: 0 10px 20px;">
+                          <td class="most-advanced__paragraph--2" width="50%" style="padding: 0 10px 20px;">
                             <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">
                               Remote Mouse lets you use your iPhone, Android or Windows Phone as a touchpad to control your onscreen cursor in a pinch.
                             </p>
@@ -204,10 +297,10 @@
             <!-- Start of Banner 'One App, One Solution' row -->
             <tr class="row-4">
               <td>
-                <table class="most-advanced__table" width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
+                <table class="one-app__table" width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
                   <tr>
                     <td>
-                      <img src="/img/one_app.jpg" alt="One App banner image which shows the apps functionality including locations, voice-over, calendar and health" style="padding-top: 75px;">
+                      <img class="one-app__image" src="/img/one_app.jpg" alt="One App banner image which shows the apps functionality including locations, voice-over, calendar and health" style="padding-top: 75px;">
                     </td>
                   </tr>
                 </table>
@@ -316,8 +409,8 @@
                       <table class="details-row--one" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0 0 22px 0; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
                         <tr>
                           <!-- Start of column one  -->
-                          <td style="width: 50%;">
-                            <table class="details-column--one" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-right: 10px;">
+                          <td class="details-column--one" style="width: 50%;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-right: 10px;">
                               <tr>
                                 <td style="width: 20%;">
                                   <img src="/img/phone_icon.png" alt="" />
@@ -335,8 +428,8 @@
                           </td>
                           <!-- End of column one -->
                           <!-- Start of column two -->
-                          <td style="width: 50%;">
-                            <table class="details-column--two" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-left: 10px;">
+                          <td class="details-column--two" style="width: 50%;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-left: 10px;">
                               <tr>
                                 <td style="width: 20%;">
                                   <img src="/img/phone_icon-48.png" alt="" />
@@ -361,11 +454,11 @@
                   <!-- Start of Row Two -->
                   <tr>
                     <td>
-                      <table class="details-row--one" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0 0 22px 0; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                      <table class="details-row--two" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0 0 22px 0; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
                         <tr>
                           <!-- Start of column one  -->
-                          <td width="50%">
-                            <table class="details-column--one" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-right: 10px;">
+                          <td class="details-column--one" width="50%">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-right: 10px;">
                               <tr>
                                 <td width="20%">
                                   <img src="/img/check_icon.png" alt="" />
@@ -383,8 +476,8 @@
                           </td>
                           <!-- End of column one -->
                           <!-- Start of column two -->
-                          <td style="width: 50%">
-                            <table class="details-column--two" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-left: 10px;">
+                          <td class="details-column--two" style="width: 50%">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-left: 10px;">
                               <tr>
                                 <td width="20%">
                                   <img src="/img/settings_icon.png" alt="" />
@@ -412,8 +505,8 @@
                       <table class="details-row--three" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0 0 22px 0; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
                         <tr>
                           <!-- Start of column one  -->
-                          <td width="50%">
-                            <table class="details-column--one" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-right: 10px;">
+                          <td class="details-column--one" width="50%">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-right: 10px;">
                               <tr>
                                 <td width="20%">
                                   <img src="/img/menu_icon.png" alt="" />
@@ -431,8 +524,8 @@
                           </td>
                           <!-- End of column one -->
                           <!-- Start of column two -->
-                          <td style="width: 50%">
-                            <table class="details-column--two" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-left: 10px;">
+                          <td class="details-column--two" style="width: 50%">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-left: 10px;">
                               <tr>
                                 <td width="20%">
                                   <img src="/img/share_icon.png" alt="" />
@@ -519,11 +612,6 @@
               </td>
             </tr>
             <!-- End of 'Footer' row -->
-            <!-- Start of main row -->
-            <tr>
-              <td></td>
-            </tr>
-            <!-- End of main row -->
           </table>
           <!-- End of Page Wrapper -->
         </td>
